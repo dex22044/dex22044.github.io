@@ -80,6 +80,19 @@
     font-weight: lighter;
 }
 
+.content a {
+    color: #5daaaf;
+}
+
+.content ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.content .separator {
+    height: 50px;
+}
+
 .content {
     margin: 10px;
     font-family: ContentFont;
