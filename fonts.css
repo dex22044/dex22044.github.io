@@ -1,0 +1,9 @@
+@font-face {
+    font-family: MainFont;
+    src: url(content/HYLIASERIFCYRILLIC.TTF);
+}
+
+@font-face {
+    font-family: ContentFont;
+    src: url(content/ARTIFAKTELEMENTITALIC.ttf);
+}
