@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://f0512394.xsph.ru/wp-content/videoData/videoData.json', false);
+    xhr.open('GET', 'content/videoData.json', false);
     xhr.send(null);
     loadVideosFromObject(JSON.parse(xhr.responseText));
 });
