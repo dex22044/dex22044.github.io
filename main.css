@@ -13,6 +13,8 @@
     flex-direction: row;
     background-color: #3f3f3f;
     align-content: center;
+    z-index: 999;
+    min-width: 500px;
 }
 
 .navigation_panel_div .navblock a {
@@ -46,14 +48,14 @@
         height: 0px;
     }
     to {
-        background-color: #6f6f6f;
+        background-color: #b53436;
         height: 30px;
     }
 }
 
 @keyframes navlink_unhover {
     from {
-        background-color: #6f6f6f;
+        background-color: #b53436;
         height: 30px;
     }
     to {

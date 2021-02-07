@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Мои видео | Сайт dex22044</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../fonts.css">
+        <link rel="stylesheet" href="videobrowser.css">
+        <script src="../jquery.js"></script>
+        <script src="videosLoader.js"></script>
+    </head>
+    <body>
+        <div class="navigation_panel_div">
+            <div class="navblock">
+                <div class="navblock_bg">
+                    <a href="../index.html" style="font-size: 26px;">Главная</a>
+                </div>
+            </div>
+            <div class="navblock">
+                <div class="navblock_bg">
+                    <a href="../projects.html">Мои проекты и проги</a>
+                </div>
+            </div>
+            <div class="navblock">
+                <div class="navblock_bg">
+                    <a href="../links.html">Ссылки</a>
+                </div>
+            </div>
+            <div class="navblock">
+                <div class="navblock_bg">
+                    <a href="../videos/videoplayer.html">Видео</a>
+                </div>
+            </div>
+        </div>
+        <div class="content_bg">
+            <div class="content">
+                <div class="videos_panel">
+                    <div class="video_box">
+                        <video class="video_preview" width="320" height="240" src="content/0001-0310_preview.mp4" muted loop
+                               onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"
+                               onclick="changeVideo(this);">
+                            <input type="hidden" class="video_src_mem">
+                            <input type="hidden" class="video_name_mem">
+                            <input type="hidden" class="video_author_mem">
+                            <input type="hidden" class="video_time_mem">
+                        </video>
+                        <div class="video_data_row">
+                            <span class="video_data_name">0001-0310</span>
+                            <div class="video_data_date_author_box">
+                                <span>dex22044</span>
+                                <span>150 лет назад</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videoplayer_panel" style="display: none;">
+                    <div class="videoplayer_panel_close_btn" onclick="$('.videoplayer_panel').fadeOut();$('.videoplayer_panel_video').trigger('pause');">✖️</div>
+                    <video class="videoplayer_panel_video" src="content/0001-0310.mkv" controls></video>
+                    <div class="videoplayer_panel_videodata">
+                        <span class="videoplayer_panel_title"></span>
+                        <div class="videoplayer_panel_author_time_row">
+                            <span class="videoplayer_panel_time"></span>
+                            <span class="videoplayer_panel_author"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
