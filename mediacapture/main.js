@@ -1,7 +1,5 @@
-<html>
-    <head>
-        <script>
-            let mediaRec;
+
+let mediaRec;
 let wsconnection;
 
 function connectToServer(){
@@ -16,7 +14,7 @@ async function startCapture(){
 
     const gdmOptions = {
         video: {
-          cursor: "always"
+            cursor: "always"
         },
         audio: false
     }
@@ -66,13 +64,3 @@ function startReceive(){
         reader.readAsArrayBuffer(e.data);
     }
 }
-        </script>
-    </head>
-    <body>
-        <video class="displayVideo" width="1280" height="720" autoplay></video><br>
-        <input type="text" class="serverAddr"><br>
-        <button onclick="connectToServer()">Connect</button><br>
-        <button onclick="startCapture()">Server</button><br>
-        <button onclick="startReceive()">Client</button>
-    </body>
-</html>
